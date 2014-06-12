@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="urn:schemas-upnp-org:device-1-0">
+	<specVersion>
+		<major>1</major>
+		<minor>0</minor>
+	</specVersion>
+	<device>
+		<deviceType>urn:schemas-upnp-org:device:MediaServer:1</deviceType>
+		<friendlyName>Ubuntu Airplay</friendlyName>
+		<manufacturer>Rag</manufacturer>
+		<modelName>model name</modelName>
+		<UDN>uuid:UUID</UDN>
+		<serviceList>
+			<service>
+				<serviceType>urn:schemas-upnp-org:service:ContentDirectory:1</serviceType>
+				<serviceId>urn:upnp-org:serviceId:ContentDirectory</serviceId>
+				<SCPDURL>/ContentDirectory.xml</SCPDURL>
+				<controlURL>/CD/control</controlURL>
+				<eventSubURL>/CD/event</eventSubURL>
+			</service>
+			<service>
+				<serviceType>urn:schemas-upnp-org:service:ConnectionManager:1</serviceType>
+				<serviceId>urn:upnp-org:serviceId:ConnectionManager</serviceId>
+				<SCPDURL>/ConnectionManager.xml</SCPDURL>
+				<controlURL>/CM/control</controlURL>
+				<eventSubURL>/CM/event</eventSubURL>
+			</service>
+			<service>
+				<serviceType>urn:schemas-upnp-org:service:AVTransport:1</serviceType>
+				<serviceId>urn:upnp-org:serviceId:AVTransport</serviceId>
+				<SCPDURL>/AVTransport.xml</SCPDURL>
+				<controlURL>/AVT/control</controlURL>
+				<eventSubURL>/AVT/event</eventSubURL>
+			</service>
+		</serviceList>
+	</device>
+</root>
